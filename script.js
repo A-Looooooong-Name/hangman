@@ -43,10 +43,6 @@ function newWord(id=-1){
 		currentWord=words[id];
 	}
 	
-	let array=currentWord.split("");
-	array.length=currentWord.length-1;
-	currentWord=array.join("");
-	
 	guessed=[];
 	for(let i=1; i<currentWord.length; i++) guessed+="_ ";
 	guessed+="_";
